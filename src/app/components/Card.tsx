@@ -7,7 +7,7 @@ interface CardProps {
   deta: {
     // id: number;
     name: string;
-    events:number;
+    events:string;
     sport:string;
     img:string;
   };
