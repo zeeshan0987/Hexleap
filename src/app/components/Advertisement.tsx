@@ -1,7 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-
+interface AdvertisementProps {
+  AdvertisementTitle: string;
+  Des: string;
+  im: string;
+}
 
 const Advertisement = ({AdvertisementTitle,Des,im}) => {
 
