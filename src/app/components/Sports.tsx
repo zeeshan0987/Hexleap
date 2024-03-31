@@ -48,7 +48,8 @@ const Sports = () => {
           {arr?.map((e) => (
             <Card key={e.id} deta={e} />
           ))}
-          <Advertisement im={AdvertisementDeta.img} AdvertisementTitle={AdvertisementDeta.AdvertisementTitle} Des={AdvertisementDeta.Des}/>
+          {AdvertisementDeta && <Advertisement im={AdvertisementDeta.img} AdvertisementTitle={AdvertisementDeta.AdvertisementTitle} Des={AdvertisementDeta.Des}/>}
+          
         </div>
         <div className="w-full flex items-center justify-center">
           <div className="w-[124px] h-[46px] rounded-[3px] bg-[#2C9CF0] flex items-center justify-center font-semibold text-[14px] text-white hover:bg-slate-800">
