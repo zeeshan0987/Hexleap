@@ -1,7 +1,20 @@
 import React from 'react'
 import Image from 'next/image'
 
-const Card = ({deta }) => {
+
+
+interface CardProps {
+  deta: {
+    // id: number;
+    name: string;
+    events:number;
+    sport:string;
+    img:string;
+  };
+
+}
+
+const Card : React.FC<CardProps> =  ({deta}) => {
   return (
     <div className='w-auto h-auto md:w-[237px] md:h-[511px] p-3 shadow-md bg-white flex flex-col gap-4 dark:bg-[#3B3E47]'>
       
