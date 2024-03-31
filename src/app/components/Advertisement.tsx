@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
-
 interface AdvertisementProps {
   AdvertisementTitle: string;
   Des: string;
   im: string; // Assuming 'im' is the image source URL
 }
 
-const Advertisement = React.FC<AdvertisementProps> = ({AdvertisementTitle,Des,im}) => {
+
+const Advertisement: React.FC<AdvertisementProps> = ({ AdvertisementTitle, Des, im }) => {
 
   return (
     <div className="w-[237px] h-[511px] p-3 shadow-md bg-white flex flex-col gap-4 dark:bg-[#3B3E47]">
